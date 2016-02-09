@@ -174,18 +174,22 @@ div .header-bottom {
 }
 
 .logo {
-    height: 20%;
-    width: 20%;
-
+    height: 90%;
+    width: 90px;
+    border-radius: 50%;
 }
 
 .logo.mcdonalds {
     background-color: #EA0100;
     border: 3px solid #B20808;
-    border-radius: 50%;
 }
 
-img .mcdonalds {
-    height: 60%;
-    width: 60%;
+
+.logo.clasohlson {
+    background-color: blue;
+    border: 3px solid #B20808;
+}
+
+img {
+    position: relative;
 }
