@@ -176,17 +176,27 @@ div .header-bottom {
   height: 100px;
   margin-top: 5px;
   margin-bottom: 5px;
+display: inline-block;
 }
 
 .logo {
     height: 90%;
     width: 90px;
     border-radius: 50%;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+
 }
 
 .logo.mcdonalds {
     background-color: #EA0100;
     border: 3px solid #B20808;
+    display: inline-block;
+}
+
+.info.mcdonalds {
+    float: right;
 }
 
 
@@ -195,6 +205,13 @@ div .header-bottom {
     border: 3px solid #ffffff;
 }
 
+.logo.ica {
+    background-color: #fff;
+    border: 3px solid #ccc;
+}
+
 img {
-    position: relative;
+    display: block;
+    margin: 11px auto;
+    max-height: 70%;
 }
