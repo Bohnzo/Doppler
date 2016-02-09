@@ -173,9 +173,19 @@ div .item {
   margin-bottom: 5px;
 }
 
+div .logo {
+    height: 90%;
+    width: 40%;
 
+}
 
-#mcdonalds {
+div .logo .mcdonalds {
+    background-color: #EA0100;
+    border: 3px solid #B20808;
+    border-radius: 50%;
+}
+
+img .mcdonalds {
     height: 60%;
-    width: 20%;
+    width: 60%;
 }
