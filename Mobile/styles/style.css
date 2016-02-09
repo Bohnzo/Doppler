@@ -192,13 +192,13 @@ display: inline-block;
 .logo.mcdonalds {
     background-color: #EA0100;
     border: 3px solid #B20808;
-    display: inline-block;
+    float: left;
 }
 
 .info.mcdonalds {
-    float: right;
+    float: left;
+    margin-left: 100px
 }
-
 
 .logo.clasohlson {
     background-color: #0bb9e9;
