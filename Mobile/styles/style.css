@@ -177,6 +177,8 @@ div .header-bottom {
     height: 90%;
     width: 90px;
     border-radius: 50%;
+    display: block;
+    margin: 5px;
 }
 
 .logo.mcdonalds {
@@ -191,5 +193,7 @@ div .header-bottom {
 }
 
 img {
-    position: relative;
+    display: block;
+    margin: 10px auto;
+    max-height: 70%;
 }
