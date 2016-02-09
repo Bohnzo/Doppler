@@ -157,7 +157,10 @@ body {
   width: 100%;
   height: 30px;
 }
-
+.doppler-logo {
+  margin: 0 auto;
+  max-height: 70%;
+}
 .header-bottom {
   background-color: #4d4d4d;
   width: 100%;
