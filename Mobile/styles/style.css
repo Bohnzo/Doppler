@@ -228,14 +228,14 @@ z-index: -1;
     clear: both;
 }
 
-.info {
+.info1 {
     background-color: #FFF;
     margin: 40px 10px 40px 120px;
     position: absolute;
 
 }
 
-.info.mcdonalds {
+.info1.mcdonalds {
     margin: 10px auto;
 }
 
