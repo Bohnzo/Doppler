@@ -188,11 +188,17 @@ display: inline-block;
     background-color: #EA0100;
     border: 3px solid #B20808;
     float: left;
+    clear: both;
+}
+
+.info {
+    background-color: #FFF;
+    margin: 40px 10px 40px 0;
+    float: right;
 }
 
 .info.mcdonalds {
-    float: left;
-    margin-left: 100px
+    margin: 10px auto;
 }
 
 .logo.clasohlson {
@@ -209,4 +215,10 @@ img {
     display: block;
     margin: 11px auto;
     max-height: 70%;
+}
+
+p {
+    font-style: italic;
+    font-size: 1em;
+
 }
