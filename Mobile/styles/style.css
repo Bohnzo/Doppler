@@ -132,21 +132,14 @@ body {
 
 @media screen and (min-width: 34em ) {
   body{ font-size: 10px; }
-<<<<<<< HEAD
+
 }
 
 @media screen and (min-width: 48em ) {
   body{ font-size: 14px; }
 }
 
-=======
-}
 
-@media screen and (min-width: 48em ) {
-  body{ font-size: 14px; }
-}
-
->>>>>>> 7e82f47289cea17570beeb9dc4f6318fcae5344a
 @keyframes lighten {
   0%, 45% { background: #2f2f2f; }
   65%, 100% { background: #f7f7f7; }
@@ -179,23 +172,12 @@ body {
 
 
 .item {
-<<<<<<< HEAD
 background-color: #FFF3D7;
 width: 100%;
 height: 100px;
 margin-top: 5px;
 margin-bottom: 5px;
 display: inline-block;
-
-
-=======
-  background-color: #FFF3D7;
-  width: 100%;
-  height: 100px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
->>>>>>> 7e82f47289cea17570beeb9dc4f6318fcae5344a
 }
 
 .logo {
