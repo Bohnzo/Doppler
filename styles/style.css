@@ -1,2 +1,25 @@
 body {
 }
+
+
+
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+.mcdonalds {
+  background-color: #EA0100;
+  border: 10px solid #B20808;
+}
+.clasohlson {
+  background-color: #0BB9E9;
+  border: 10px solid lightgrey;
+}
+.logo {
+  width: 60%;
+  height: 60%;
+  position: relative;
+  margin: 15% auto;
+}
