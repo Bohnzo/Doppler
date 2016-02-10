@@ -101,7 +101,7 @@ body {
   position: absolute;
   top: 12.5%;
   left: 5%;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 
 .button {
@@ -154,6 +154,7 @@ body {
 
 /*--- VÅR CSS ------------------------------------------ */
 
+/*Header on top of screen, to make the mockup more representative*/
 .header-top {
   background-color: #8CC63F;
   width: 100%;
@@ -170,7 +171,7 @@ body {
   margin-bottom: 40px;
 }
 
-
+/*Appearance for items behind the logos*/
 .item {
 background-color: #FFF3D7;
 width: 100%;
@@ -181,6 +182,7 @@ display: inline-block;
 z-index: -1;
 }
 
+/*Appearance for all logos*/
 .logo {
     height: 90%;
     width: 90px;
@@ -201,11 +203,12 @@ z-index: -1;
     inset 0 0 0 0 16px rgba(255, 255, 255, 0.6),
     0 1px 2px rgba(0, 0, 0, 0.1);
 
-    transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
+/*Animations for logos when hovering*/
 .logo:hover {
     height: 320px;
     cursor: pointer;
@@ -214,51 +217,74 @@ z-index: -1;
     margin: auto;
     z-index: 1;
     box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
-    0 1px 2px rgba(0, 0, 0, 0.1);
+    0 1px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
     0 1px 2px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
-    0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 30px white;
 
 }
 
+/*Appearance of info paragraph next to logos*/
+.info1 {
+    background-color: #FFF;
+    margin: 40px 10px 40px 120px;
+    position: absolute;
+    z-index: 0;
+
+}
+
+/*Specifications for McDOnalds logo*/
 .logo.mcdonalds {
     background-color: #EA0100;
     border: 3px solid #B20808;
     float: left;
     clear: both;
+    z-index: 3;
 }
 
-.info1 {
-    background-color: #FFF;
-    margin: 40px 10px 40px 120px;
-    position: absolute;
-
+.logo.mcdonalds:hover {
+    -webkit-box-shadow: 0 0 30px #EA0100;
 }
 
 .info1.mcdonalds {
     margin: 10px auto;
+
 }
 
+/*Specifications for Clas Ohlson logo*/
 .logo.clasohlson {
     background-color: #0bb9e9;
     border: 3px solid #ffffff;
     float: left;
     clear: both;
+    z-index: 2;
 }
 
+.logo.clasohlson:hover {
+    -webkit-box-shadow: 0 0 30px #0071BC;
+}
+
+/*Specifications for ICA logo*/
 .logo.ica {
     background-color: #fff;
     border: 3px solid #ccc;
     float: left;
     clear: both;
+    z-index: 1;
 }
 
-
+.gradient {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left, #0071bc, #27A8E0, #29ABE2);
+    -webkit-box-shadow: 0 0 15px #0071BC;
+}
 
 img {
     display: block;
-    margin: 11px auto;
+    margin: 13%;
     max-height: 70%;
 }
 
