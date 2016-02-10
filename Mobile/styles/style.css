@@ -154,6 +154,7 @@ body {
 
 /*--- VÅR CSS ------------------------------------------ */
 
+/*Header on top of screen, to make the mockup more representative*/
 .header-top {
   background-color: #8CC63F;
   width: 100%;
@@ -170,7 +171,7 @@ body {
   margin-bottom: 40px;
 }
 
-
+/*Appearance for items behind the logos*/
 .item {
 background-color: #FFF3D7;
 width: 100%;
@@ -181,6 +182,7 @@ display: inline-block;
 z-index: -1;
 }
 
+/*Appearance for all logos*/
 .logo {
     height: 90%;
     width: 90px;
@@ -206,6 +208,7 @@ z-index: -1;
     -webkit-transition: all 0.4s ease-in-out;
 }
 
+/*Animations for logos when hovering*/
 .logo:hover {
     height: 320px;
     width: 100%;
@@ -220,6 +223,16 @@ z-index: -1;
 
 }
 
+/*Appearance of info paragraph next to logos*/
+.info1 {
+    background-color: #FFF;
+    margin: 40px 10px 40px 120px;
+    position: absolute;
+    z-index: 0;
+
+}
+
+/*Specifications for McDOnalds logo*/
 .logo.mcdonalds {
     background-color: #EA0100;
     border: 3px solid #B20808;
@@ -232,19 +245,12 @@ z-index: -1;
     -webkit-box-shadow: 0 0 30px #EA0100;
 }
 
-.info1 {
-    background-color: #FFF;
-    margin: 40px 10px 40px 120px;
-    position: absolute;
-    z-index: 0;
-
-}
-
 .info1.mcdonalds {
     margin: 10px auto;
 
 }
 
+/*Specifications for Clas Ohlson logo*/
 .logo.clasohlson {
     background-color: #0bb9e9;
     border: 3px solid #ffffff;
@@ -257,6 +263,7 @@ z-index: -1;
     -webkit-box-shadow: 0 0 30px #0071BC;
 }
 
+/*Specifications for ICA logo*/
 .logo.ica {
     background-color: #fff;
     border: 3px solid #ccc;
