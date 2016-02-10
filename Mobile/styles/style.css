@@ -208,6 +208,7 @@ z-index: -1;
 
 .logo:hover {
     height: 320px;
+    cursor: pointer;
     width: 100%;
     overflow: visible;
     margin: auto;
