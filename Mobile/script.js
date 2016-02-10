@@ -1,14 +1,14 @@
 
 
-$(".gradient").click(function() {
+$(".clickable").click(function() {
 
 		function animation() {
-  	$(".gradient").toggleClass('gradientAnimation');
+  	$(".clickable").toggleClass('gradientAnimation');
 
  		}
 
  	  function disappear() {
-  	$(".gradient").css("display", "none");
+  	$(".clickable").css("display", "none");
   	}
 
     animation();

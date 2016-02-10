@@ -292,40 +292,6 @@ z-index: -1;
     z-index: 1;
 }
 
-.gradient {
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 0;
-
-    -webkit-box-shadow: 0 0 15px #FF931E;
-
-    animation:greenPulse 1.5s infinite ease-in-out;
-    -webkit-animation:greenPulse 1.5s infinite ease-in-out;
-    -moz-animation:greenPulse 1.5s infinite ease-in-out;
-    -o-animation:greenPulse 1.5s infinite ease-in-out;
-
-    -webkit-animation: rotating 15s linear infinite;
-    -moz-animation: rotating 15s linear infinite;
-    -ms-animation: rotating 15s linear infinite;
-    o-animation: rotating 15s linear infinite;
-    animation: rotating 15s linear infinite;
-}
-.gradientAnimation {
-  -webkit-box-shadow: 0 0 15px #0071BC;
-
-  animation: greenPulse 1.5s ease-in-out;
-  -webkit-animation: greenPulse 1.5s ease-in-out;
-  -moz-animation: greenPulse 1.5s ease-in-out;
-  -o-animation: greenPulse 1.5s ease-in-out;
-
-  animation: bubbleUp 0.5s ease-in-out;
-  -webkit-animation: bubbleUp 0.5s ease-in-out;
-  -o-animation: bubbleUp 0.5s ease-in-out;
-  -moz-animation: bubbleUp 0.5s ease-in-out;
-}
-
 img {
     display: block;
     margin: 13%;
@@ -338,7 +304,64 @@ p {
     font-size: 1em;
 }
 
-@keyframes greenPulse {
+
+/* ---- ANIMATION TEST ----------------------------------- */
+.gradient {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: #FF931E;
+    -webkit-box-shadow: 0 0 15px #FF931E;
+
+    animation:orangePulse 1.5s infinite ease-in-out;
+    -webkit-animation:orangePulse 1.5s infinite ease-in-out;
+    -moz-animation:orangePulse 1.5s infinite ease-in-out;
+    -o-animation:orangePulse 1.5s infinite ease-in-out;
+
+    -webkit-animation: rotating 15s linear infinite;
+    -moz-animation: rotating 15s linear infinite;
+    -ms-animation: rotating 15s linear infinite;
+    o-animation: rotating 15s linear infinite;
+    animation: rotating 15s linear infinite;
+}
+.gradient2 {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left, #0071bc, #27A8E0, #29ABE2);
+    box-shadow: #0071BC;
+    -webkit-box-shadow: 0 0 15px #0071BC;
+
+    animation:bluePulse 1.5s infinite ease-in-out;
+    -webkit-animation:bluePulse 1.5s infinite ease-in-out;
+    -moz-animation:bluePulse 1.5s infinite ease-in-out;
+    -o-animation:bluePulse 1.5s infinite ease-in-out;
+
+}
+.gradientAnimation {
+  box-shadow: #FF931E;
+  -webkit-box-shadow: 0 0 15px #FF931E;
+
+  animation: orangePulse 1.5s ease-in-out;
+  -webkit-animation: orangePulse 1.5s ease-in-out;
+  -moz-animation: orangePulse 1.5s ease-in-out;
+  -o-animation: orangePulse 1.5s ease-in-out;
+
+  animation: bubbleUp 0.5s ease-in-out;
+  -webkit-animation: bubbleUp 0.5s ease-in-out;
+  -o-animation: bubbleUp 0.5s ease-in-out;
+  -moz-animation: bubbleUp 0.5s ease-in-out;
+}
+
+@keyframes bluePulse {
+  0% {box-shadow:0 0 30px #0071BC}
+  50% {box-shadow:0 0 80px #0071BC}
+  100% {box-shadow:0 0 30px #0071BC}
+}
+@keyframes orangePulse {
   0% {box-shadow:0 0 30px #FF931E}
   50% {box-shadow:0 0 80px #FF931E}
   100% {box-shadow:0 0 30px #FF931E}
