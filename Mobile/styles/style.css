@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #34abfa;
+  background: #fff;
   padding-top: 5%;
   font-size: 5px;
   font-family: 'Open Sans', sans-serif;
@@ -279,7 +279,26 @@ z-index: -1;
     width: 200px;
     border-radius: 50%;
     background: -webkit-linear-gradient(left, #0071bc, #27A8E0, #29ABE2);
+
     -webkit-box-shadow: 0 0 15px #0071BC;
+
+    animation:greenPulse 1.5s infinite ease-in-out;
+    -webkit-animation:greenPulse 1.5s infinite ease-in-out;
+    -moz-animation:greenPulse 1.5s infinite ease-in-out;
+    -o-animation:greenPulse 1.5s infinite ease-in-out;
+}
+.gradientAnimation {
+  -webkit-box-shadow: 0 0 15px #0071BC;
+
+  animation: greenPulse 1.5s ease-in-out;
+  -webkit-animation: greenPulse 1.5s ease-in-out;
+  -moz-animation: greenPulse 1.5s ease-in-out;
+  -o-animation: greenPulse 1.5s ease-in-out;
+  
+  animation: bubbleUp 0.5s ease-in-out;
+  -webkit-animation: bubbleUp 0.5s ease-in-out;
+  -o-animation: bubbleUp 0.5s ease-in-out;
+  -moz-animation: bubbleUp 0.5s ease-in-out;
 }
 
 img {
@@ -291,4 +310,16 @@ img {
 p {
     font-family: 'Signika', Helvetica, sans-serif;
     font-size: 1em;
+}
+
+@keyframes greenPulse {
+  0% {box-shadow:0 0 30px #4bbec8}
+  50% {box-shadow:0 0 80px #4bbec8}
+  100% {box-shadow:0 0 30px #4bbec8}
+}
+@keyframes bubbleUp {
+  0% {bottom:550px;-webkit-transform:scale(1);opacity:1}
+  50% {bottom:545px;-webkit-transform:scale(.3);opacity:1}
+  80% {bottom:550px;-webkit-transform:scale(3);opacity:0}
+  100% {bottom:110px;-webkit-transform:scale(.9);opacity:0}
 }
