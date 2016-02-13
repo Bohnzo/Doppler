@@ -306,6 +306,17 @@ p {
 
 
 /* ---- ANIMATION TEST ----------------------------------- */
+
+.points {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: -webkit-linear-gradient(left, #0071bc, #27A8E0, #29ABE2);
+    border-radius: 50%;
+
+}
+
+
 .gradient {
     margin: 20px;
     height: 200px;
@@ -340,6 +351,11 @@ p {
     -moz-animation:bluePulse 1.5s infinite ease-in-out;
     -o-animation:bluePulse 1.5s infinite ease-in-out;
 
+}
+.clickable {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
 }
 .gradientAnimation {
   box-shadow: #FF931E;
