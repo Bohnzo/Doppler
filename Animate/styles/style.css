@@ -278,9 +278,7 @@ z-index: -1;
     width: 100%;
     border-radius: 50%;
 }
-
 .erbjudande:hover {
-
 }*/
 
 /*Specifications for ICA logo*/
@@ -326,10 +324,10 @@ p {
     */
 
 
-    animation: blip 1s ease-in-out;
-    -webkit-animation: blip 1s ease-in-out;
-    -moz-animation: blip 1s ease-in-out;
-    -o-animation: blip 1s ease-in-out
+    animation: blip 0.5s ease-in-out;
+    -webkit-animation: blip 0.5s ease-in-out;
+    -moz-animation: blip 0.5s ease-in-out;
+    -o-animation: blip 0.5s ease-in-out
 
 }
 
@@ -375,8 +373,6 @@ p {
   width: 200px;
 }
 .gradientAnimation {
-  box-shadow: #FF931E;
-  -webkit-box-shadow: 0 0 15px #FF931E;
 
   animation: orangePulse 1.5s ease-in-out;
   -webkit-animation: orangePulse 1.5s ease-in-out;
@@ -407,7 +403,8 @@ p {
 }
 
   @keyframes blip {
-    0% {transform:translate3d(0, 0, 0) }
-    50% {transform:translate3d(0, -150px, 0) }
-    100% {transform:translate3d(200px, -300px, 0) }
+    0% {transform:translate3d(0, 0, 0) scale(1) }
+    100% {transform: translate3d(350px,-350px,0) scale(0.1) }
+    /*50% {transform:translate3d(0, -150px, 0) }
+    100% {transform:translate3d(200px, -300px, 0) }*/
   }
