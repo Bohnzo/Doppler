@@ -1,0 +1,389 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  padding-top: 5%;
+  font-size: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.iphone {
+  position: relative;
+  background: #202020;
+  width: 45%;
+  height: 0;
+  padding-top: 95%;
+  margin: 0 auto;
+  border-radius: 3em;
+}
+
+.power {
+  position: absolute;
+  background: #202020;
+  width: 13%;
+  height: .5%;
+  top: -.5%;
+  right: 12%;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.lock {
+  position: absolute;
+  background: #202020;
+  width: 1%;
+  height: 5%;
+  top: 12.5%;
+  left: -1%;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+.volume {
+  position: absolute;
+  background: #202020;
+  width: 1%;
+  height: 4%;
+  top: 23%;
+  left: -1%;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+.volume.down{ top: 31%; }
+
+.camera {
+  position: absolute;
+  top: 4%;
+  left: 48.5%;
+  background: #3f3f3f;
+  width: 3%;
+  height: 0;
+  padding-top: 3%;
+  border-radius: 50%;
+}
+
+.speaker {
+  position: absolute;
+  top: 7%;
+  left: 42.5%;
+  background: #3f3f3f;
+  width: 15%;
+  height: 0;
+  padding-top: 3%;
+  border-radius: 1em;
+}
+
+
+
+.text {
+  opacity: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  animation: unhide 5s infinite alternate;
+}
+
+.screen {
+  background: #ffffff;
+  width: 90%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 5%;
+  /*overflow: auto;*/
+}
+
+.button {
+  position: absolute;
+  bottom: 2.75%;
+  left: 42.5%;
+  background: #3f3f3f;
+  /* border: 1px solid #3f3f3f; */
+  width: 15%;
+  height: 0;
+  padding-top: 15%;
+  border-radius: 50%;
+}
+
+.square {
+  position: absolute;
+  top: 27.5%;
+  left: 27.5%;
+  border: 2px solid #d7d7d7;
+  border-radius: .3em;
+  width: 45%;
+  height: 45%;
+}
+
+@media screen and (min-width: 28em ) {
+  body{ font-size: 8px; }
+}
+
+@media screen and (min-width: 34em ) {
+  body{ font-size: 10px; }
+
+}
+
+@media screen and (min-width: 48em ) {
+  body{ font-size: 14px; }
+}
+
+
+@keyframes lighten {
+  0%, 45% { background: #2f2f2f; }
+  65%, 100% { background: #f7f7f7; }
+}
+
+@keyframes unhide {
+  0%, 55% { opacity: 0 }
+  75%, 100% { opacity: 1 }
+}
+
+
+
+/*--- VÅR CSS ------------------------------------------ */
+
+/*Header on top of screen, to make the mockup more representative*/
+.header-top {
+  background-color: #8CC63F;
+  width: 100%;
+  height: 30px;
+}
+.doppler-logo {
+  margin: 0 auto;
+  max-height: 70%;
+}
+.header-bottom {
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 40px;
+}
+
+/*Appearance for items behind the logos*/
+.item {
+background-color: #FFF3D7;
+width: 100%;
+height: 100px;
+margin-top: 5px;
+margin-bottom: 5px;
+display: inline-block;
+z-index: -1;
+}
+
+/*Appearance for all logos*/
+.logo {
+    height: 90%;
+    width: 90px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    backface-visibility: hidden;
+    position: relative;
+
+    box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4),
+    inset 0 0 0 0 16px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4),
+    inset 0 0 0 0 16px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4),
+    inset 0 0 0 0 16px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+/*Animations for logos when hovering*/
+.logo:hover {
+    height: 320px;
+    cursor: pointer;
+    width: 100%;
+    overflow: visible;
+    margin: auto;
+    z-index: 1;
+
+    /*Darken logos when hovering*/
+    box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
+    0 1px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 0 1100px rgba(0, 0, 0, 0.8),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+
+    /*Glow around the logos*/
+    box-shadow: 0 0 30px white;
+    -webkit-box-shadow: 0 0 30px white;
+    -moz-box-shadow: 0 0 30px white;
+}
+
+/*Appearance of info paragraph next to logos*/
+.info1 {
+    background-color: #FFF;
+    margin: 40px 10px 40px 120px;
+    position: absolute;
+    z-index: 0;
+
+}
+
+/*Specifications for McDOnalds logo*/
+.logo.mcdonalds {
+    background-color: #EA0100;
+    border: 3px solid #B20808;
+    float: left;
+    clear: both;
+    z-index: 3;
+}
+
+.logo.mcdonalds:hover {
+    -webkit-box-shadow: 0 0 30px #EA0100;
+}
+
+.info1.mcdonalds {
+    margin: 10px auto;
+
+}
+
+/*Specifications for Clas Ohlson logo*/
+.logo.clasohlson {
+    background-color: #0bb9e9;
+    border: 3px solid #ffffff;
+    float: left;
+    clear: both;
+    z-index: 2;
+}
+
+.logo.clasohlson:hover {
+    -webkit-box-shadow: 0 0 30px #0071BC;
+}
+
+/*.erbjudande {
+    background: grey;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.erbjudande:hover {
+
+}*/
+
+/*Specifications for ICA logo*/
+.logo.ica {
+    background-color: #FFF;
+    border: 3px solid #ccc;
+    float: left;
+    clear: both;
+    z-index: 1;
+}
+
+img {
+    display: block;
+    margin: 13%;
+    max-height: 70%;
+}
+
+
+p {
+    font-family: 'Signika', Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+/* ---- ANIMATION TEST ----------------------------------- */
+.gradient {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: #FF931E;
+    -webkit-box-shadow: 0 0 15px #FF931E;
+
+    animation:orangePulse 1.5s infinite ease-in-out;
+    -webkit-animation:orangePulse 1.5s infinite ease-in-out;
+    -moz-animation:orangePulse 1.5s infinite ease-in-out;
+    -o-animation:orangePulse 1.5s infinite ease-in-out;
+
+    -webkit-animation: rotating 15s linear infinite;
+    -moz-animation: rotating 15s linear infinite;
+    -ms-animation: rotating 15s linear infinite;
+    o-animation: rotating 15s linear infinite;
+    animation: rotating 15s linear infinite;
+}
+.gradient2 {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left, #0071bc, #27A8E0, #29ABE2);
+    box-shadow: #0071BC;
+    -webkit-box-shadow: 0 0 15px #0071BC;
+
+    animation:bluePulse 1.5s infinite ease-in-out;
+    -webkit-animation:bluePulse 1.5s infinite ease-in-out;
+    -moz-animation:bluePulse 1.5s infinite ease-in-out;
+    -o-animation:bluePulse 1.5s infinite ease-in-out;
+
+}
+.gradientAnimation {
+  box-shadow: #FF931E;
+  -webkit-box-shadow: 0 0 15px #FF931E;
+
+  animation: orangePulse 1.5s ease-in-out;
+  -webkit-animation: orangePulse 1.5s ease-in-out;
+  -moz-animation: orangePulse 1.5s ease-in-out;
+  -o-animation: orangePulse 1.5s ease-in-out;
+
+  animation: bubbleUp 0.5s ease-in-out;
+  -webkit-animation: bubbleUp 0.5s ease-in-out;
+  -o-animation: bubbleUp 0.5s ease-in-out;
+  -moz-animation: bubbleUp 0.5s ease-in-out;
+}
+
+@keyframes bluePulse {
+  0% {box-shadow:0 0 30px #0071BC}
+  50% {box-shadow:0 0 80px #0071BC}
+  100% {box-shadow:0 0 30px #0071BC}
+}
+@keyframes orangePulse {
+  0% {box-shadow:0 0 30px #FF931E}
+  50% {box-shadow:0 0 80px #FF931E}
+  100% {box-shadow:0 0 30px #FF931E}
+}
+@keyframes bubbleUp {
+  0% {bottom:550px;-webkit-transform:scale(1);opacity:1}
+  50% {bottom:545px;-webkit-transform:scale(.3);opacity:1}
+  80% {bottom:550px;-webkit-transform:scale(3);opacity:0}
+  100% {bottom:110px;-webkit-transform:scale(.9);opacity:0}
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }

@@ -1,0 +1,1 @@
+$(".clickable").click(function(){function c(){$(".clickable").toggleClass("gradientAnimation")}function i(){$(".clickable").css("display","none")}c(),setTimeout(i,500)});
