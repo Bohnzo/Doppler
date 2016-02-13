@@ -1,5 +1,5 @@
 
-
+/*
 $(".clickable").click(function() {
 
 		function animation() {
@@ -13,4 +13,11 @@ $(".clickable").click(function() {
 
     animation();
     setTimeout(disappear, 500)
+ });
+*/
+
+$(".clickable").click(function() {
+
+	  	$(".points").addClass('pointsActive');
+
  });
