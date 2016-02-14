@@ -1,0 +1,47 @@
+
+.gradient {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: #FF931E;
+
+    background: -webkit-linear-gradient(left, #FB833B, #FCC53F, #FCFF43);
+
+
+    box-shadow: 0 0 15px #FF931E;
+    -webkit-box-shadow: 0 0 15px #FF931E;
+
+    animation:orangePulse 1.5s infinite ease-in-out;
+    -webkit-animation:orangePulse 1.5s infinite ease-in-out;
+    -moz-animation:orangePulse 1.5s infinite ease-in-out;
+    -ms-animation:orangePulse 1.5s infinite ease-in-out;
+    -o-animation:orangePulse 1.5s infinite ease-in-out;
+}
+.gradientAnimation {
+  box-shadow: #FF931E;
+  -webkit-box-shadow: 0 0 15px #FF931E;
+
+  animation: orangePulse 1.5s ease-in-out;
+  -webkit-animation: orangePulse 1.5s ease-in-out;
+  -moz-animation: orangePulse 1.5s ease-in-out;
+  -o-animation: orangePulse 1.5s ease-in-out;
+
+  animation: bubbleUp 0.5s ease-in-out;
+  -webkit-animation: bubbleUp 0.5s ease-in-out;
+  -o-animation: bubbleUp 0.5s ease-in-out;
+  -moz-animation: bubbleUp 0.5s ease-in-out;
+}
+
+@keyframes orangePulse {
+  0% {box-shadow:0 0 30px #FCC53F}
+  50% {box-shadow:0 0 80px #FCC53F}
+  100% {box-shadow:0 0 30px #FCC53F}
+}
+@keyframes bubbleUp {
+  0% {bottom:550px;-webkit-transform:scale(1);opacity:1}
+  50% {bottom:545px;-webkit-transform:scale(.3);opacity:1}
+  80% {bottom:550px;-webkit-transform:scale(.3);opacity:0.8}
+  100% {bottom:110px;-webkit-transform:scale(3);opacity:0}
+}
